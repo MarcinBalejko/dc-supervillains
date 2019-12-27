@@ -1,12 +1,22 @@
-import React from 'react';
+import React, { Component } from 'react';
+import Villains from './components/Villains';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <h1>App</h1>
-    </div>
-  );
+class App extends Component {
+  state = {
+    villains: []
+  }
+
+
+
+
+  render() {
+    return (
+      <div className="App">
+        <Villains />
+      </div>
+    );
+  }
 }
 
 export default App;
