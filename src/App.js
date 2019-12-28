@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 import Villains from './components/Villains';
+//import Navbar from './components/Navbar';
+//import Header from './components/Header';
+//import Content from './components/Content';
 import AddButton from './components/AddButton';
 import MinusButton from './components/MinusButton';
+//import Footer from './components/Footer';
 import './App.css';
 import axios from 'axios';
 

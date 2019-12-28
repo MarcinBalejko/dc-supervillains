@@ -41,13 +41,14 @@ body {
 /* Content background image styling */
 
 #content-background{
-    background-image: url(https://ibb.co/TYdp6Jk);
+    background-image: url(https://i.ibb.co/6rLVzGm/background-img.png);
     background-size: cover;
 }
 
 /* Logo positioning to the center */
 #logo{
-    position: absolute;
+  background-image: url("https://ibb.co/k0V9j3x");
+  position: absolute;
 }
 #logo-size{
     max-height: 25vh;
