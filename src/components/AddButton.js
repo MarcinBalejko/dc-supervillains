@@ -4,7 +4,7 @@ class AddButton extends Component {
 
     render() {
         return (
-            <button onClick={this.props.btnClick}>Button</button>
+            <button onClick={this.props.btnClick}>+Button</button>
         )
 
     }
