@@ -11,7 +11,7 @@ class App extends Component {
   state = {
     villains: [],
     oneVillain: [],
-    addButtonCount: 0
+    buttonCount: 0,
   }
 
 
@@ -29,41 +29,63 @@ class App extends Component {
 
   addButtonOnClickHandler = (e) => {
     e.preventDefault();
-    let count = this.state.addButtonCount;
 
-    if (count !== 5) {
+    if (this.state.buttonCount < 4) {
       this.setState({
-        oneVillain: [this.state.villains[count]],
-        addButtonCount: (count + 1)
+        oneVillain: [this.state.villains[this.state.buttonCount]],
+        buttonCount: (this.state.buttonCount + 1)
       });
-    } else {
+    } else if (this.state.buttonCount === 4) {
       this.setState({
-        oneVillain: [this.state.villains[0]],
-        addButtonCount: 1,
+        oneVillain: [this.state.villains[this.state.buttonCount]],
+        buttonCount: (this.state.buttonCount + 1)
       });
     }
 
   }
+
+
+  // below needs refactoring
 
   minusButtonOnClickHandler = (e) => {
     e.preventDefault();
-    let count = this.state.addButtonCount;
 
-    if (count !== -1) {
+    if (this.state.buttonCount === 5) {
       this.setState({
-        oneVillain: [this.state.villains[count]],
-        addButtonCount: (count - 1)
-      });
-    } else {
+        buttonCount: (this.state.buttonCount - 1),
+        oneVillain: [this.state.villains[(this.state.buttonCount - 2)]]
+      })
+    }
+
+    if (this.state.buttonCount === 4) {
       this.setState({
-        oneVillain: [this.state.villains[4]],
-        addButtonCount: 4,
-      });
+        buttonCount: (this.state.buttonCount - 1),
+        oneVillain: [this.state.villains[(this.state.buttonCount - 2)]]
+      })
+    }
+
+    if (this.state.buttonCount === 3) {
+      this.setState({
+        buttonCount: (this.state.buttonCount - 1),
+        oneVillain: [this.state.villains[(this.state.buttonCount - 2)]]
+      })
+    }
+
+    if (this.state.buttonCount === 2) {
+      this.setState({
+        buttonCount: (this.state.buttonCount - 1),
+        oneVillain: [this.state.villains[(this.state.buttonCount - 2)]]
+      })
+    }
+
+    if (this.state.buttonCount === 1) {
+      this.setState({
+        buttonCount: (this.state.buttonCount - 1),
+        oneVillain: []
+      })
     }
 
   }
-
-
 
 
   render() {
