@@ -8,16 +8,23 @@ class App extends Component {
     villains: []
   }
 
-  // componentDidMount() {
-  //   axios.get('https://jsonplaceholder.typicode.com/todos?_limit=7')
-  //     .then(res => this.setState({ todos: res.data }))
-  // }
+
+
+  componentDidMount() {
+    axios.get('https://supervillains-react.herokuapp.com/villains')
+      .then(res => {
+        const villains = res.data;
+        this.setState({ villains });
+      })
+  }
 
 
   render() {
     return (
       <div className="App">
-        <Villains />
+        <ul>
+          <Villains villains={this.state.villains} />
+        </ul>
       </div>
     );
   }
