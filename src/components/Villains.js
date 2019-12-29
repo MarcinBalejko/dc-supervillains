@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Villains extends Component {
     render() {
         return this.props.villain.map((character) => (
-            <img id="villain-pic" src={character.picture} />
+            <div className="villain-pic-box"><img id="villain-pic" src={character.picture} /></div>
         ));
     }
 }

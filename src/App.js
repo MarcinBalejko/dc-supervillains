@@ -98,9 +98,7 @@ class App extends Component {
         <div className="switcher">
           <MinusButton btnMinusClick={this.minusButtonOnClickHandler} />
           <AddButton btnClick={this.addButtonOnClickHandler} />
-          <div className="villain-pic-box">
-            <Villains villain={this.state.oneVillain} />
-          </div>
+          <Villains villain={this.state.oneVillain} />
         </div>
       </div>
     );
