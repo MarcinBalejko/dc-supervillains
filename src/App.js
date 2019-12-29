@@ -95,11 +95,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="switcher">
-          <MinusButton btnMinusClick={this.minusButtonOnClickHandler} />
-          <AddButton btnClick={this.addButtonOnClickHandler} />
-          <Villains villain={this.state.oneVillain} />
-        </div>
+
+        <div><MinusButton btnMinusClick={this.minusButtonOnClickHandler} /></div>
+        <div><Villains villain={this.state.oneVillain} /></div>
+        <div><AddButton btnClick={this.addButtonOnClickHandler} /></div>
+
+
       </div>
     );
   }
