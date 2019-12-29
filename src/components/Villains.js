@@ -3,7 +3,13 @@ import React, { Component } from 'react';
 class Villains extends Component {
     render() {
         return this.props.villain.map((character) => (
-            <img id="villain-pic" src={character.picture} />
+            <div id="villain-card-name">
+                <img id="villain-pic" src={character.picture} />
+                <div id="char-name">
+                    <p id="char-name-p">{character.name}</p>
+                </div>
+            </div>
+
         ));
     }
 }

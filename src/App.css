@@ -126,6 +126,12 @@ body {
   box-sizing: border-box;
   border: 10px solid #fff;
 
+
+}
+
+#villain-card-name {
+  min-width: 200px;
+  min-height: 100px;
 }
 
 #flexbox-container {
@@ -156,4 +162,16 @@ body {
 
 .plus {
   padding-left: 5%;
+}
+
+#char-name {
+  text-align: center;
+  font-family: 'Covered By Your Grace', cursive;
+  font-size: 120%;
+
+}
+
+#char-name-p{
+  border: solid black 2px;
+  background-color: #fff;
 }
