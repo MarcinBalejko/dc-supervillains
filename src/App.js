@@ -96,9 +96,12 @@ class App extends Component {
     return (
       <div className="App">
 
-        <div><MinusButton btnMinusClick={this.minusButtonOnClickHandler} /></div>
-        <div><Villains villain={this.state.oneVillain} /></div>
-        <div><AddButton btnClick={this.addButtonOnClickHandler} /></div>
+
+        <div className="gallery-container">
+          <div className="minus"><MinusButton btnMinusClick={this.minusButtonOnClickHandler} /></div>
+          <div className="the-pic"><Villains villain={this.state.oneVillain} /></div>
+          <div lassName="plus" ><AddButton btnClick={this.addButtonOnClickHandler} /></div>
+        </div>
 
 
       </div>

@@ -130,7 +130,6 @@ body {
 
 #flexbox-container {
   display: inline;
-  
   justify-content: center;
 }
 
@@ -141,7 +140,20 @@ body {
   justify-content: center;
 }
 
-.App {
+.gallery-container {
   display: flex;
   justify-content: center;
+}
+
+.minus {
+  padding-right: 5%;
+}
+
+.the-pic{
+  padding-right: 5%;
+  margin-top: 2%;
+}
+
+.plus {
+  padding-left: 5%;
 }
