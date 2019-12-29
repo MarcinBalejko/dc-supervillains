@@ -10,13 +10,4 @@ class AddButton extends Component {
     }
 }
 
-// const addBtn = {
-
-//     background: 'black',
-//     color: '#fff',
-//     textAlign: 'center',
-//     padding: '10px'
-// }
-
-
 export default AddButton;

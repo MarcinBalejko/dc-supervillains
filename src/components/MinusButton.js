@@ -10,14 +10,4 @@ class MinusButton extends Component {
     }
 }
 
-
-// const minusBtn = {
-
-//     background: 'black',
-//     color: '#fff',
-//     textAlign: 'center',
-//     padding: '10px'
-// }
-
-
 export default MinusButton;

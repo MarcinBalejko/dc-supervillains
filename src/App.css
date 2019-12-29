@@ -70,7 +70,7 @@ body {
 #root {
   position: relative;
   z-index: 5;
-  margin-top: 14vw;
+  margin-top: 18vw;
 }
 
 .add-btn {
@@ -119,13 +119,9 @@ body {
   color: black;
 }
 
-
-
 .switcher {
   display: inline;
 }
-
-
 
 #villain-pic {
   box-sizing: border-box;
