@@ -175,3 +175,9 @@ body {
   border: solid black 2px;
   background-color: #fff;
 }
+
+#arrow{
+  margin-left: 48vw;
+  margin-top: 25px;
+  color: #fff;
+}
