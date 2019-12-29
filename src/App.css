@@ -74,26 +74,52 @@ body {
 }
 
 .add-btn {
+  background-color:#080808;
+  color: #fff;
+  outline: none;
   text-align: center;
-  height: 35px;
-  width: 65px;
+  height: 55px;
+  width: 55px;
+  padding: 10px;
   position: relative;
   float: right;
   margin-right: 28vw;
   opacity: 0.8;
+  border-radius: 50%;
+  filter: alpha(opacity=95);
+}
+
+.add-btn:hover {
+  border: solid black 5px;
+  background-color: #fff;
   filter: alpha(opacity=90);
+  color: black;
 }
 
 .minus-btn {
+  background-color:#080808;
+  color: #fff;
+  outline: none;
   text-align: center;
-  height: 35px;
-  width: 65px;
+  height: 55px;
+  width: 55px;
+  padding: 10px;
   position: relative;
   float: left;
   margin-left: 28vw;
   opacity: 0.8;
-  filter: alpha(opacity=90);
+  border-radius: 50%;
+  filter: alpha(opacity=95);
 }
+
+.minus-btn:hover {
+  border: solid black 5px;
+  background-color: #fff;
+  filter: alpha(opacity=90);
+  color: black;
+}
+
+
 
 .switcher {
   display: inline;
