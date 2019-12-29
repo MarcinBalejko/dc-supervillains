@@ -66,3 +66,15 @@ body {
     margin-top: 10vh;
     margin-left: 56vw;
 }
+
+#root {
+  position: relative;
+  z-index: 5;
+  margin-left: 30.5vw;
+  margin-top: 15.5vw;
+}
+
+.btn {
+  opacity: 0.8;
+  filter: alpha(opacity=90);
+}
