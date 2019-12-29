@@ -95,9 +95,13 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <MinusButton btnMinusClick={this.minusButtonOnClickHandler} />
-        <AddButton btnClick={this.addButtonOnClickHandler} />
-        <Villains villain={this.state.oneVillain} />
+        <div className="switcher">
+          <MinusButton btnMinusClick={this.minusButtonOnClickHandler} />
+          <AddButton btnClick={this.addButtonOnClickHandler} />
+          <div className="villain-pic-box">
+            <Villains villain={this.state.oneVillain} />
+          </div>
+        </div>
       </div>
     );
   }

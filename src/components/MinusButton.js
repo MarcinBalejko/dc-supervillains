@@ -4,7 +4,7 @@ class MinusButton extends Component {
 
     render() {
         return (
-            <button className="btn" style={minusBtn} onClick={this.props.btnMinusClick}>Previous</button>
+            <button className="minus-btn" style={minusBtn} onClick={this.props.btnMinusClick}>Previous</button>
         )
 
     }
@@ -15,7 +15,7 @@ const minusBtn = {
 
     background: 'black',
     color: '#fff',
-    textAlign: 'right',
+    textAlign: 'center',
     padding: '10px'
 }
 

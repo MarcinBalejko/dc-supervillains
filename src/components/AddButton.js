@@ -4,7 +4,7 @@ class AddButton extends Component {
 
     render() {
         return (
-            <button className="btn" style={addBtn} onClick={this.props.btnClick}> Next </button>
+            <button className="add-btn" style={addBtn} onClick={this.props.btnClick}> Next </button>
         )
 
     }
@@ -14,7 +14,7 @@ const addBtn = {
 
     background: 'black',
     color: '#fff',
-    textAlign: 'right',
+    textAlign: 'center',
     padding: '10px'
 }
 
