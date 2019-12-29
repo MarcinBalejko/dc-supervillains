@@ -48,7 +48,6 @@ class App extends Component {
 
   }
 
-
   // below needs refactoring
 
   minusButtonOnClickHandler = (e) => {
@@ -91,18 +90,15 @@ class App extends Component {
 
   }
 
-
   render() {
     return (
       <div className="App">
-
 
         <div className="gallery-container">
           <div className="minus"><MinusButton btnMinusClick={this.minusButtonOnClickHandler} /></div>
           <div className="the-pic"><Villains villain={this.state.oneVillain} /></div>
           <div lassName="plus" ><AddButton btnClick={this.addButtonOnClickHandler} /></div>
         </div>
-
 
       </div>
     );
