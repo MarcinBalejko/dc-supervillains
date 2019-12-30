@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
 import Villains from './components/Villains';
-//import Navbar from './components/Navbar';
-//import Header from './components/Header';
+import Logo from './components/Logo';
+import Navbar from './components/Navbar';
+import Header from './components/Header2';
 //import Content from './components/Content';
+import Header2 from './components/Header2';
 import AddButton from './components/AddButton';
 import MinusButton from './components/MinusButton';
-//import Footer from './components/Footer';
+import Arrow from './components/Arrow';
 import './App.css';
 import axios from 'axios';
+import Content2 from './components/Content2';
+import Footer2 from './components/Footer2';
 
 class App extends Component {
 
@@ -93,11 +97,35 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <div id="real_body">
+          <div id="logo">
+            <Logo />
+          </div>
+          <div className="nav">
+            <Navbar />
+          </div>
+          <div id="header">
+            <Header />
+          </div>
 
-        <div className="gallery-container">
-          <div className="minus"><MinusButton btnMinusClick={this.minusButtonOnClickHandler} /></div>
-          <div className="the-pic"><Villains villain={this.state.oneVillain} /></div>
-          <div lassName="plus" ><AddButton btnClick={this.addButtonOnClickHandler} /></div>
+
+          <div id="content-background" className="content">
+            <div className="gallery-container">
+              <div className="minus"><MinusButton btnMinusClick={this.minusButtonOnClickHandler} /></div>
+              <div className="the-pic"><Villains villain={this.state.oneVillain} /></div>
+              <div lassName="plus" ><AddButton btnClick={this.addButtonOnClickHandler} /></div>
+            </div>
+          </div>
+          <div className="footer">
+            <Arrow />
+          </div>
+
+
+          <Header2 />
+          <Content2 />
+          <Footer2 />
+
+
         </div>
 
       </div>
