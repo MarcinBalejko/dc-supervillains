@@ -13,6 +13,10 @@ import axios from 'axios';
 import Content2 from './components/Content2';
 import Footer2 from './components/Footer2';
 import Header3 from './components/Header3';
+import CharacterNameCard from './components/CharacterNameCard';
+import CharacterDescriptionCard from './components/CharacterDescriptionCard';
+import CharacterPowerCard from './components/CharacterPowerCard';
+import CharacterEnemyCard from './components/CharacterEnemyCard';
 
 class App extends Component {
 
@@ -130,9 +134,10 @@ class App extends Component {
             <div class="centered">
               <section id="cards-to-show" class="cards">
 
-
-
-
+                <CharacterNameCard />
+                <CharacterDescriptionCard />
+                <CharacterPowerCard />
+                <CharacterEnemyCard />
 
 
               </section>

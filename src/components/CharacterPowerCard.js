@@ -1,6 +1,6 @@
 import React from 'react';
 
-function CharacterNameCard() {
+function CharacterPowerCard() {
     return (
         <article id="power-card" class="card">
             <p>Uses Venom which grants him superhuman strength and healing process.</p>
@@ -14,4 +14,4 @@ function CharacterNameCard() {
     )
 }
 
-export default CharacterNameCard;
+export default CharacterPowerCard;
