@@ -70,7 +70,7 @@ body {
 
 .third-header {
   grid-area: 21 / 1 / 22 / 7;
-  background-color: black;
+  background-color: white; /* temporarily white */
 }
 .third-content { 
   grid-area: 22 / 1 / 30 / 7;
