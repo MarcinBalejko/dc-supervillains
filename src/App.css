@@ -15,27 +15,57 @@ img {
 /* Grid layout*/
 
 body {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(10, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(30, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 
-    height: 100vh;
-    margin: 0;
+  height: 100vh;
+  margin: 0;
+
+  min-height: 2463px;
+  background-color: black;
 }
     
 .nav { 
-    background-color: black;
-    grid-area: 1 / 1 / 2 / 7;
+  background-color: black;
+  grid-area: 1 / 1 / 2 / 7;
+  /* max-height: 50%; */
 }
 .content { 
-    background-color: lightcoral;
-    grid-area: 2 / 1 / 10 / 7;
+  background-color: lightcoral;
+  grid-area: 2 / 1 / 10 / 7;
 }
 .footer { 
-    background-color: black;
-    grid-area: 10 / 1 / 11 / 7; 
+  background-color: black;
+  grid-area: 10 / 1 / 11 / 7; 
+  color: white;
+}
+
+.second-header { 
+  grid-area: 11 / 1 / 12 / 7;
+  background-color: black;
+}
+.second-content { 
+  grid-area: 12 / 1 / 20 / 7;
+}
+.second-footer { 
+  grid-area: 20 / 1 / 21 / 7;
+  background-color: black;
+}
+
+.third-header {
+  grid-area: 21 / 1 / 22 / 7;
+  background-color: black;
+}
+.third-content { 
+  grid-area: 22 / 1 / 30 / 7;
+  background-color: lightgreen;
+}
+.third-footer { 
+  grid-area: 30 / 1 / 31 / 7;
+  background-color: black;
 }
 
 /* Content background image styling */
@@ -47,7 +77,7 @@ body {
 
 /* Logo positioning to the center */
 #logo{
-  background-image: url("https://ibb.co/k0V9j3x");
+  background-image: url("https://ibb.co/k0V9j3x"); /* might be a problem here */
   position: absolute;
 }
 #logo-size{
@@ -66,6 +96,210 @@ body {
     margin-top: 10vh;
     margin-left: 56vw;
 }
+
+/* Arrow - footer*/
+
+#arrow{
+  margin-left: 48vw;
+  margin-top: 25px;
+  color: #fff;
+}
+
+/* Second page */
+#second-content-background{
+  background-image: url(https://i.ibb.co/TtCvSry/gotham.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  clip-path: polygon(0 6%, 100% 0, 100% 94%, 0 100%);
+
+}
+
+/* Third page */
+
+#third-content-background{
+  background-image: url(https://i.ibb.co/pQPX3bx/city.png);
+  background-color: white;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  clip-path: polygon(0 0, 100% 6%, 100% 100%, 0 94%);
+
+}
+
+
+/* Cards */
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  font-family: 'Covered By Your Grace', cursive;
+
+  animation-duration: 2s;
+  animation-name: slide_right;
+}
+
+@keyframes slide_right {
+  from {
+      margin-left: 100%;
+  }
+  to {
+      margin-left: 0%;
+  }
+}   
+
+
+.card {
+  flex: 0 1 20%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.918);
+  background-color: whitesmoke;
+  border-radius: 5px;
+  padding: 16px;
+  text-align: center;
+  height: 452px;
+  width: 100px;
+  margin-top: 15vh;
+
+}
+
+.card:hover{
+  background-color: white;
+  margin-top: 14.5vh;
+
+}
+
+/* Character card styling */
+
+#character-card{
+  /* background-image: url("images/character.jpg"); */
+  border-style: solid;
+  border-color: white;
+}
+
+#character-name{
+  font-family: 'Covered By Your Grace', cursive;
+  margin-top: 44vh;
+  border-style: solid;
+  border-width: thin; 
+  border-radius: 5px;
+  background-color: white;
+  opacity: 0.8;
+}
+
+
+/* Description card styling */
+
+#description-card{
+  border-style: solid;
+  background:rgba(248, 248, 248, 0.7);
+
+}
+
+
+#description-name{
+  font-family: 'Covered By Your Grace', cursive;
+  margin-top: 8vh;
+  border-style: solid;
+  border-width: thin; 
+  border-radius: 5px;
+  background-color: white;
+}
+
+
+/* Power card styling */
+
+#power-card{
+  border-style: solid;
+  background:rgba(248, 248, 248, 0.7);
+}
+
+#power-image{
+  background-repeat: no-repeat;
+  background-size: 500px 200px;
+}
+
+#power-name{
+  font-family: 'Covered By Your Grace', cursive;
+  margin-top: 2vh;
+  border-style: solid;
+  border-width: thin; 
+  border-radius: 5px;
+  background-color: white;
+}
+
+
+
+/* Enemy card styling & Special card animation */
+
+.flip3D > .front {
+	position: absolute;
+    transform: perspective( 600px ) rotateY( 0deg );
+
+    /* background-image: url("images/card.png"); */
+    background-size: cover;
+
+    flex: 0 1 20%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.918);
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding: 16px;
+    text-align: center;
+    height: 452px;
+    width: 285px;
+    margin-top: 15vh;
+    
+
+	backface-visibility: hidden;
+	transition: transform .5s linear 0s;
+}
+.flip3D > .back {
+	position: relative;
+	transform: perspective( 600px ) rotateY( 180deg );
+    
+    flex: 0 1 20%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.918);
+    font-family: 'Covered By Your Grace', cursive;
+
+    /* Enemy card styling */
+
+    /* background-image: url("images/batman.jpg"); */
+    border-style: solid;
+    border-color: white;
+
+    border-radius: 5px;
+    padding: 16px;
+    text-align: center;
+    height: 452px;
+    width: 285px;
+    margin-top: 15vh;
+
+    
+	backface-visibility: hidden;
+	transition: transform .5s linear 0s;
+}
+
+#enemy-name{
+    font-family: 'Covered By Your Grace', cursive;
+    margin-top: 45vh;
+    border-style: solid;
+    border-width: thin; 
+    border-radius: 5px;
+    background-color: white;
+    opacity: 0.8;
+}
+
+
+.flip3D:hover > .front {
+	transform: perspective( 600px ) rotateY( -180deg );
+}
+.flip3D:hover > .back {
+	transform: perspective( 600px ) rotateY( 0deg );
+}
+
+
+/* Villain gallery part */
 
 #root {
   position: relative;
@@ -174,10 +408,4 @@ body {
 #char-name-p{
   border: solid black 2px;
   background-color: #fff;
-}
-
-#arrow{
-  margin-left: 48vw;
-  margin-top: 25px;
-  color: #fff;
 }
