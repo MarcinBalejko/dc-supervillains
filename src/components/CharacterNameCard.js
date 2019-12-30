@@ -1,13 +1,21 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-function CharacterNameCard() {
-    return (
-        <article id="character-card" className="card">
-            <div id="character-name">
-                <p>character</p>
-            </div>
-        </article>
-    )
+class CharacterNameCard extends Component {
+    render() {
+        return this.props.villain.map((villain) => (
+            <article id="character-card" className="card">
+                <div id="character-name">
+                    <p>{villain.name}</p>
+                </div>
+            </article>
+
+        ));
+    }
 }
 
 export default CharacterNameCard;
+
+
+
+
+

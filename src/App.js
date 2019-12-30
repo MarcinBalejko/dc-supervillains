@@ -134,7 +134,7 @@ class App extends Component {
             <div class="centered">
               <section id="cards-to-show" class="cards">
 
-                <CharacterNameCard />
+                <CharacterNameCard villain={this.state.oneVillain} />
                 <CharacterDescriptionCard />
                 <CharacterPowerCard />
                 <CharacterEnemyCard />
