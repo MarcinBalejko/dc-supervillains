@@ -15,11 +15,8 @@ img {
 /* Grid layout*/
 
 body {
-
-
   height: 100vh;
   margin: 0;
-
   min-height: 2463px;
   background-color: black;
 } 
@@ -70,7 +67,7 @@ body {
 
 .third-header {
   grid-area: 21 / 1 / 22 / 7;
-  background-color: white; /* temporarily white */
+  background-color: black;
 }
 .third-content { 
   grid-area: 22 / 1 / 30 / 7;
@@ -141,7 +138,6 @@ body {
   clip-path: polygon(0 0, 100% 6%, 100% 100%, 0 94%);
 
 }
-
 
 /* Cards */
 
@@ -241,7 +237,6 @@ body {
   border-radius: 5px;
   background-color: white;
 }
-
 
 
 /* Enemy card styling & Special card animation */

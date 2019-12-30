@@ -12,6 +12,7 @@ import './App.css';
 import axios from 'axios';
 import Content2 from './components/Content2';
 import Footer2 from './components/Footer2';
+import Header3 from './components/Header3';
 
 class App extends Component {
 
@@ -120,14 +121,25 @@ class App extends Component {
             <Arrow />
           </div>
 
-
           <Header2 />
           <Content2 />
           <Footer2 />
 
+          <Header3 />
+          <div id="third-content-background" class="third-content">
+            <div class="centered">
+              <section id="cards-to-show" class="cards">
+
+
+
+
+
+
+              </section>
+            </div>
+          </div>
 
         </div>
-
       </div>
     );
   }
