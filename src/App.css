@@ -84,13 +84,12 @@ body {
 /* Content background image styling */
 
 .App{
-    /* background-image: url(https://i.ibb.co/6rLVzGm/background-img.png); */
     background-size: cover;
 }
 
 /* Logo positioning to the center */
 #logo{
-  background-image: url("https://ibb.co/k0V9j3x"); /* might be a problem here */
+  background-image: url("https://ibb.co/k0V9j3x");
   position: absolute;
 }
 #logo-size{
@@ -101,6 +100,7 @@ body {
 /* header styling */
 #header{
     position: absolute;
+    margin-top: 1%;
     font-family: 'Covered By Your Grace', cursive;
     color: black;
 }
@@ -393,6 +393,7 @@ body {
 }
 
 .gallery-container {
+  margin-top: 10%;
   display: flex;
   justify-content: center;
 }
