@@ -3,7 +3,6 @@ import Villains from './components/Villains';
 import Logo from './components/Logo';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
-//import Content from './components/Content';
 import Header2 from './components/Header2';
 import AddButton from './components/AddButton';
 import MinusButton from './components/MinusButton';
@@ -136,7 +135,7 @@ class App extends Component {
               <section id="cards-to-show" class="cards">
 
                 <CharacterNameCard villain={this.state.oneVillain} />
-                <CharacterDescriptionCard />
+                <CharacterDescriptionCard villain={this.state.oneVillain} />
                 <CharacterPowerCard />
                 <CharacterEnemyCard />
 
