@@ -136,7 +136,7 @@ class App extends Component {
 
                 <CharacterNameCard villain={this.state.oneVillain} />
                 <CharacterDescriptionCard villain={this.state.oneVillain} />
-                <CharacterPowerCard />
+                <CharacterPowerCard villain={this.state.oneVillain} />
                 <CharacterEnemyCard />
 
 
