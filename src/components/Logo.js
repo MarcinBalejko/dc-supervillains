@@ -2,7 +2,7 @@ import React from 'react';
 
 function Logo() {
     return (
-        <img id="logo-size" src="images/dc_logo.png"></img>
+        <img id="logo-size" src="images/dc_logo.png" alt=""></img>
     )
 }
 
