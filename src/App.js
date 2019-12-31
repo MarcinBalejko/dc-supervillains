@@ -17,6 +17,7 @@ import CharacterNameCard from './components/CharacterNameCard';
 import CharacterDescriptionCard from './components/CharacterDescriptionCard';
 import CharacterPowerCard from './components/CharacterPowerCard';
 import CharacterEnemyCard from './components/CharacterEnemyCard';
+import Footer3 from './components/Footer3';
 
 class App extends Component {
 
@@ -143,6 +144,7 @@ class App extends Component {
               </section>
             </div>
           </div>
+          <Footer3 />
 
         </div>
       </div>
