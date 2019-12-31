@@ -213,21 +213,66 @@ body {
 
 /* Description card styling */
 
-#description-card{
-  border-style: solid;
-  background:rgba(248, 248, 248, 0.7);
+#description-card {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  justify-content: center;
+  flex-basis: 100%;
+  flex: 0 1 20%;
+  background-color: rgba(248, 248, 248, 0.7);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.918);
+  border: solid;
+  border-radius: 5px;
+  padding: 16px;
+  text-align: center;
+  height: 452px;
+  width: 100px;
+  margin-top: 15vh;
+  
+}
 
+#description-container {
+  background-color: rgba(248, 248, 248, 0.7);
+  margin-bottom: 5%;
+  margin-top: 5%;
+  border: solid;
+  border-width: thin;
+  border-radius: 5px;
 }
 
 
 #description-name{
   font-family: 'Covered By Your Grace', cursive;
-  margin-top: 8vh;
-  border-style: solid;
-  border-width: thin; 
-  border-radius: 5px;
-  background-color: #fff;
+  background-color: rgba(248, 248, 248, 0.7); 
+  max-height: 340px;
+  
+  
 }
+
+#description-title-container {
+  background-color: rgba(248, 248, 248, 0.0);
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  justify-content: flex-end;
+  
+}
+
+#character-description-p{
+  text-align: center;
+  padding-top: 3%;
+  border: solid;
+  border-width: thin;
+  border-radius: 5px;
+  background-color: rgba(248, 248, 248, 0.7);
+  height: 40px; 
+  font-size: large;
+  font-weight: bold;
+  
+
+}
+
 
 
 /* Power card styling */
