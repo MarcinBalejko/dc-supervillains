@@ -8,7 +8,7 @@ class CharacterDescriptionCard extends Component {
                     <p id="description-name">{character.description}</p>
                 </div>
                 <div id="description-title-container">
-                    <p id="character-description-p">character description</p>
+                    <p id="character-description-p">Character description</p>
                 </div>
 
             </div>
