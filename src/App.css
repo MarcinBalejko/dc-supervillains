@@ -466,6 +466,7 @@ body {
 }
 
 #villain-card-name {
+  position: relative;
   min-width: 200px;
   min-height: 100px;
   font-weight: bold;
@@ -491,6 +492,7 @@ body {
 }
 
 .minus {
+  margin-right: 2%;
   padding-right: 5%;
 }
 
@@ -500,7 +502,15 @@ body {
 }
 
 .plus {
-  padding-left: 5%;
+  
+  padding-left: 3%;
+}
+
+.select{
+  position: absolute;
+  margin-top: 9%;
+  font-size: 45px;
+  font-family: 'Covered By Your Grace', cursive; 
 }
 
 #char-name {
@@ -514,3 +524,4 @@ body {
   border: solid black 2px;
   background-color: #fff;
 }
+

@@ -24,7 +24,7 @@ class App extends Component {
   state = {
     villains: [],
     oneVillain: [],
-    buttonCount: 0,
+    buttonCount: 0
   }
 
 
@@ -32,6 +32,7 @@ class App extends Component {
     axios.get('https://supervillains-react.herokuapp.com/villains')
       .then(res => {
         const villains = res.data;
+
         this.setState({
           villains
         });
@@ -97,6 +98,7 @@ class App extends Component {
       })
     }
 
+
   }
 
   render() {
@@ -115,8 +117,9 @@ class App extends Component {
           <div id="content-background" className="content">
             <div className="gallery-container">
               <div className="minus"><MinusButton btnMinusClick={this.minusButtonOnClickHandler} /></div>
+              <p className="select">SELECT</p>
               <div className="the-pic"><Villains villain={this.state.oneVillain} /></div>
-              <div lassName="plus" ><AddButton btnClick={this.addButtonOnClickHandler} /></div>
+              <div className="plus" ><AddButton btnClick={this.addButtonOnClickHandler} /></div>
             </div>
           </div>
           <div className="footer">
