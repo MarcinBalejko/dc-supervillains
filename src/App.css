@@ -296,6 +296,7 @@ body {
 }
 
 #power-description{
+  margin-top: 0;
   font-size: large;
   border: solid;
   border-width: thin;
