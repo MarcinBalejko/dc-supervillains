@@ -395,32 +395,12 @@ body {
 }
 
 
-
 .flip3D:hover > .front {
 	transform: perspective( 600px ) rotateY( -180deg );
 }
 .flip3D:hover > .back {
 	transform: perspective( 600px ) rotateY( 0deg );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* Villain gallery part */
