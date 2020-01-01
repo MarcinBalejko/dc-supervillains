@@ -10,9 +10,11 @@ class CharacterDescriptionCard extends Component {
                     <article><img src={card} alt="" /></article>
                 </div>
                 <div class="back">
-                    <article></article>
+
+                    <img id="villain-pic" src={character.enemypicture} alt="" />
+
                     <div id="enemy-name">
-                        <p>arch enemy</p>
+                        <p>{character.enemy}</p>
                     </div>
                 </div>
             </div>
