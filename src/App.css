@@ -371,23 +371,29 @@ body {
 
 #enemy-name{
     font-family: 'Covered By Your Grace', cursive;
-    border-style: solid;
-    border-width: thin; 
-    border-radius: 5px;
+    
     background-color: white;
     opacity: 0.8;
-}
-
-#enemy-name-p{
-  
+    
 }
 
 #villain-enemy-pic {
     box-sizing: border-box;
-    border: solid #fff;
+    border: solid  #fff 5px;
     border-width: thin;
     border-radius: 5px;
 }
+
+#enemy-name-p{
+  border-style: solid;
+    border-width: thin; 
+    border-radius: 5px;
+    margin-top: 0;
+    padding: 2%;
+    font-size: medium;
+    font-weight: bold;
+}
+
 
 
 .flip3D:hover > .front {
