@@ -355,14 +355,14 @@ body {
 
     /* background-image: url("images/batman.jpg"); */
     border-style: solid;
-    border-color: white;
-
+    border-color: black;
     border-radius: 5px;
     padding: 16px;
     text-align: center;
     height: 452px;
     width: 285px;
     margin-top: 15vh;
+    background-color: rgba(248, 248, 248, 0.7);
 
     
 	backface-visibility: hidden;
@@ -371,12 +371,22 @@ body {
 
 #enemy-name{
     font-family: 'Covered By Your Grace', cursive;
-    margin-top: 45vh;
     border-style: solid;
     border-width: thin; 
     border-radius: 5px;
     background-color: white;
     opacity: 0.8;
+}
+
+#enemy-name-p{
+  
+}
+
+#villain-enemy-pic {
+    box-sizing: border-box;
+    border: solid #fff;
+    border-width: thin;
+    border-radius: 5px;
 }
 
 
@@ -386,6 +396,25 @@ body {
 .flip3D:hover > .back {
 	transform: perspective( 600px ) rotateY( 0deg );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Villain gallery part */
@@ -446,8 +475,7 @@ body {
 
 #villain-pic {
   box-sizing: border-box;
-  border: 10px solid #fff;
-
+  border: solid #fff;
 
 }
 
