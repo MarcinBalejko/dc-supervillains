@@ -10,7 +10,6 @@ class CharacterDescriptionCard extends Component {
                 <div id="description-title-container">
                     <p id="character-description-p">Character description</p>
                 </div>
-
             </div>
 
         ));

@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Content2() {
+function Content3() {
     return (
         <div id="second-content-background" className="second-content"></div>
     )
 }
 
-export default Content2;
+export default Content3;

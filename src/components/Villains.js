@@ -9,7 +9,6 @@ class Villains extends Component {
                     <p id="char-name-p">{character.name}</p>
                 </div>
             </div>
-
         ));
     }
 }

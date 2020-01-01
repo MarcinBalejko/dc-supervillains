@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import card from '../images/card.png';
 
-
-class CharacterDescriptionCard extends Component {
+class CharacterEnemyCard extends Component {
     render() {
         return this.props.villain.map((character) => (
             <div class="flip3D">
@@ -23,7 +22,7 @@ class CharacterDescriptionCard extends Component {
     }
 }
 
-export default CharacterDescriptionCard;
+export default CharacterEnemyCard;
 
 
 

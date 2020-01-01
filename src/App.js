@@ -112,8 +112,6 @@ class App extends Component {
           <div id="header">
             <Header />
           </div>
-
-
           <div id="content-background" className="content">
             <div className="gallery-container">
               <div className="minus"><MinusButton btnMinusClick={this.minusButtonOnClickHandler} /></div>
@@ -124,22 +122,17 @@ class App extends Component {
           <div className="footer">
             <Arrow />
           </div>
-
           <Header2 />
           <Content2 />
           <Footer2 />
-
           <Header3 />
           <div id="third-content-background" class="third-content">
             <div class="centered">
               <section id="cards-to-show" class="cards">
-
                 <CharacterNameCard villain={this.state.oneVillain} />
                 <CharacterDescriptionCard villain={this.state.oneVillain} />
                 <CharacterPowerCard villain={this.state.oneVillain} />
                 <CharacterEnemyCard villain={this.state.oneVillain} />
-
-
               </section>
             </div>
           </div>

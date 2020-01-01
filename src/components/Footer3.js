@@ -6,5 +6,4 @@ function Footer3() {
     )
 }
 
-
 export default Footer3;
