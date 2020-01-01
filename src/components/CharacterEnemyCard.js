@@ -1,19 +1,29 @@
-import React from 'react';
+import React, { Component } from 'react';
+import card from '../images/card.png';
 
-function CharacterEnemyCard() {
-    return (
-        <div class="flip3D">
-            <div class="front">
-                <article></article>
-            </div>
-            <div class="back">
-                <article></article>
-                <div id="enemy-name">
-                    <p>arch enemy</p>
+
+class CharacterDescriptionCard extends Component {
+    render() {
+        return this.props.villain.map((character) => (
+            <div class="flip3D">
+                <div class="front">
+                    <article><img src={card} alt="" /></article>
+                </div>
+                <div class="back">
+                    <article></article>
+                    <div id="enemy-name">
+                        <p>arch enemy</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    )
+
+        ));
+    }
 }
 
-export default CharacterEnemyCard;
+export default CharacterDescriptionCard;
+
+
+
+
+

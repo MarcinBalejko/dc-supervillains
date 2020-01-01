@@ -137,7 +137,7 @@ class App extends Component {
                 <CharacterNameCard villain={this.state.oneVillain} />
                 <CharacterDescriptionCard villain={this.state.oneVillain} />
                 <CharacterPowerCard villain={this.state.oneVillain} />
-                <CharacterEnemyCard />
+                <CharacterEnemyCard villain={this.state.oneVillain} />
 
 
               </section>
