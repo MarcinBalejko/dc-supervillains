@@ -272,8 +272,6 @@ body {
   font-weight: bold;
 }
 
-
-
 /* Power card styling */
 
 #power-card{
@@ -353,7 +351,6 @@ body {
 
     /* Enemy card styling */
 
-    /* background-image: url("images/batman.jpg"); */
     border-style: solid;
     border-color: black;
     border-radius: 5px;
@@ -371,7 +368,6 @@ body {
 
 #enemy-name{
     font-family: 'Covered By Your Grace', cursive;
-    
     background-color: white;
     opacity: 0.8;
     
