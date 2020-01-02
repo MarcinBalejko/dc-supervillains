@@ -15,7 +15,7 @@ Tools and technologies used:
 |   Description   |   Image    |
 |:------------:|:----------------:|
 |User enters the main page| ![signin](public/images/readme_pics/1.png)|
-|User can select a supervillain by clicking the arrow buttons| ![signin](public/images/readme_pics/2.png|
+|User can select a supervillain by clicking the arrow buttons| ![signin](public/images/readme_pics/2.png)|
 |User can scroll down to view the supervillain's information| ![signin](public/images/readme_pics/3.png)|
 |Supervillain overview part| ![signin](public/images/readme_pics/4.png)|
 |The card on the right end of the page flips on hover| ![signin](public/images/readme_pics/5.png)|
