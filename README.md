@@ -1,6 +1,6 @@
 DC Supervillains
 ================
-Using React to create a DC Supervillains wiki application. It handles the API calls to self-made REST API (https://github.com/MarcinBalejko/supervillain-rest-api). User can select one of the supervillains from the database and learn some basic information about them.
+DC Supervillains gallery. Project combines back-end (https://github.com/MarcinBalejko/supervillain-rest-api) and front-end apps communicating via exposed API end points. I have used MERN stack - MongoDB, Express, React and Node.js . Parallax effects and CSS carousel.
 
 
 Tools and technologies used:
