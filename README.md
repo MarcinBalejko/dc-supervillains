@@ -10,6 +10,12 @@ Tools and technologies used:
 * Axios
 * HTML / CSS
 
+**Heroku**
+-------------------------------
+This app has been deployed to Heroku:
+
+https://dc-supervillains.herokuapp.com/
+
 -----
 
 |   Description   |   Image    |
