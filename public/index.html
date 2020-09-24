@@ -1,71 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="App.css" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>DCSupervillains</title>
+    <script
+      src="https://kit.fontawesome.com/1f4b5ec242.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      let myScrollFunc = function () {
+        let y = window.scrollY;
+        if (y >= 1400) {
+          show(document.querySelectorAll(".cards"));
 
-<head>
-  <meta charset="utf-8" />
-  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="Web site created using create-react-app" />
-  <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="App.css">
-  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-  <title>DCSupervillains</title>
-  <script src="https://kit.fontawesome.com/25c2fb81be.js" crossorigin="anonymous"></script>
-  <script>
+          function show(elements, specifiedDisplay) {
+            let computedDisplay, element, index;
 
-    let myScrollFunc = function () {
-      let y = window.scrollY;
-      if (y >= 1400) {
+            elements = elements.length ? elements : [elements];
+            for (index = 0; index < elements.length; index++) {
+              element = elements[index];
+              element.style.display = "";
+              computedDisplay = window
+                .getComputedStyle(element, null)
+                .getPropertyValue("display");
 
-        show(document.querySelectorAll('.cards'));
-
-        function show(elements, specifiedDisplay) {
-          let computedDisplay, element, index;
-
-          elements = elements.length ? elements : [elements];
-          for (index = 0; index < elements.length; index++) {
-            element = elements[index];
-            element.style.display = '';
-            computedDisplay = window.getComputedStyle(element, null).getPropertyValue('display');
-
-            if (computedDisplay === 'none') {
-              element.style.display = specifiedDisplay || 'block';
+              if (computedDisplay === "none") {
+                element.style.display = specifiedDisplay || "block";
+              }
             }
-
           }
-        }
 
-        console.log("now show the cards");
-
-      } else if (y <= 1000) {
-
-        function hide(elements) {
-          elements = elements.length ? elements : [elements];
-          for (let index = 0; index < elements.length; index++) {
-            elements[index].style.display = 'none';
+          console.log("now show the cards");
+        } else if (y <= 1000) {
+          function hide(elements) {
+            elements = elements.length ? elements : [elements];
+            for (let index = 0; index < elements.length; index++) {
+              elements[index].style.display = "none";
+            }
           }
+
+          hide(document.querySelectorAll(".cards"));
+          hide(document.querySelector(".cards"));
+          hide(document.getElementsByClassName("cards"));
+
+          console.log("point at empty div");
         }
+      };
 
-        hide(document.querySelectorAll('.cards'));
-        hide(document.querySelector('.cards'));
-        hide(document.getElementsByClassName('cards'));
+      window.addEventListener("scroll", myScrollFunc);
+    </script>
+  </head>
 
-        console.log("point at empty div");
-      }
-    };
-
-    window.addEventListener("scroll", myScrollFunc);
-
-  </script>
-</head>
-
-<body>
-
-  <div id="root"></div>
-
-</body>
-
+  <body>
+    <div id="root"></div>
+  </body>
 </html>
